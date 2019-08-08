@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ros-dashing-ros-environment</id>
-    <version>2.3.0</version>
-    <title>ros-dashing-ros-environment</title>
-    <authors>Dirk Thomas <dthomas@osrfoundation.org></authors>
+    <id>@(Package)</id>
+    <version>@(Version)</version>
+    <title>@(Package)</title>
+    <authors>@(Authors)</authors>
     <owners>OSRF</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>The package provides the environment variables `ROS_VERSION` and `ROS_DISTRO`.</description>
-<dependencies>
-      <dependency id="ros-dashing-ros-workspace"/>
+    <description>@(Description)</description>
+    <dependencies>
+@[for d in Depends]@(d)@[end for]
     </dependencies>
   </metadata>
   <files>
